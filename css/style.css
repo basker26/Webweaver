@@ -13,29 +13,62 @@ a{
     text-decoration: none;
 }
 
+/* -----active page page background--- */
+.active{
+    background-color: #ddd;
+    
+}
+
 /*---------------------------------------navbar-------------------------------------------------*/
 .head{
     display: flex;
     background-color: white;
     align-items: center;
     
+    
 }
 .title{
     padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
+/* ---MEMBERSHIP BUTTON-- */
+.title button{
+    letter-spacing: 2px;
+    width: max-content;
+    height:max-content;
+    border: 0;
+    color: black;
+    padding: 8px 30px;
+    background-image: linear-gradient(-45deg , rgb(236, 144, 38) , rgb(255, 238, 0));
+   
+}
+.title button:hover{
+    cursor: pointer;
+    scale: 110%;
+}
+/* -----memberhip button style end-------- */
+
+
+
 /* Add a black background color to the top navigation */
-.topnav {
+.topnav{
     margin: auto;
     float: left;
     width: 100%;
+    align-content: center;
     background-color: white;
     overflow: hidden;
+    justify-content: right;
+    padding-right: 5%;
+    
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
-    float: left;
+    float: right;
     display: block;
     color: black;
     text-align: center;
@@ -67,9 +100,7 @@ a{
           background-color: rgba(228, 228, 228, 0.719) ;
       }
 
-    .head .nav_socialicons {
-        display: none;
-    }
+    
     .title{
         display: flex;
         justify-content: space-around;
@@ -80,6 +111,13 @@ a{
     
 
     }
+
+    .title button{
+        position: relative;
+        margin: 19px auto;
+        float: right;
+    }
+
     .topnav{
         display: flex;
         width: 100%;
@@ -92,35 +130,7 @@ a{
     
   }
 
-  /* ------navicons--------- */
-  .nav_socialicons{
-      display: flex;
-      padding-right: 5%;
-      flex-direction: row;
-      column-gap: 10px;
-      
-  }
-  
  
-  .head button img,.head button{
-    width: 1cm;
-    height: 1cm;
-    border-radius: 5mm;
-  }
-
-  .head button{
-      background-color: white;
-       border:white; 
-       opacity: 0.8;
-  }
-
-  .head button:hover{
-      transition: .1sec;
-      scale: 110%;
-      opacity: 1;
-
-  }
-
 
 
   /* ----------------------newsarea----------- */
@@ -205,6 +215,12 @@ footer{
     width: 1cm;
     height: 1cm;
     border-radius: 3mm;
+}
+.socialicons img:hover{
+    transition: .1s;
+    scale: 110%;
+    opacity: 1;
+
 }
 
 .footstyle h3{
