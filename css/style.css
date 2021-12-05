@@ -1,236 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+body {
+    background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
+    font-family: 'Rubik', sans-serif;
+    background: #f0f3f5e3;
+    height: 100 !important
 }
 
-
-body{
-    background-color: rgba(228, 228, 228, 0.719);
-}
-a{
-    text-decoration: none;
+/* ------------navbar background color------------- */
+.bg-light {
+    background-color: white !important;
 }
 
-/* -----active page page background--- */
-.active{
-    background-color: #ddd;
-    
-}
-
-/*---------------------------------------navbar-------------------------------------------------*/
-.head{
-    display: flex;
-    background-color: white;
-    align-items: center;
-    
-    
-}
-.title{
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
+.container-fluid {
     justify-content: space-around;
-}
-
-/* ---MEMBERSHIP BUTTON-- */
-.title button{
-    letter-spacing: 2px;
-    width: max-content;
-    height:max-content;
-    border: 0;
-    color: black;
-    padding: 8px 30px;
-    background-image: linear-gradient(-45deg , rgb(236, 144, 38) , rgb(255, 238, 0));
-   
-}
-.title button:hover{
-    cursor: pointer;
-    scale: 110%;
-}
-/* -----memberhip button style end-------- */
-
-
-
-/* Add a black background color to the top navigation */
-.topnav{
-    margin: auto;
-    float: left;
-    width: 100%;
-    align-content: center;
-    background-color: white;
     overflow: hidden;
-    justify-content: right;
-    padding-right: 5%;
-    
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: right;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: rgb(209, 14, 14);
-  }
-  
-
-  
-/* When the screen is less than 800 pixels wide,then navbar shift down*/
-@media screen and (max-width: 800px) {
-    .head{
-        
-        padding: auto;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .newline{
-          width: 100%;
-          background-color: rgba(228, 228, 228, 0.719) ;
-      }
-
-    
-    .title{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        height: 70px;
-        padding-left: 20px;
-        
-    
-
-    }
-
-    .title button{
-        position: relative;
-        margin: 19px auto;
-        float: right;
-    }
-
-    .topnav{
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-
-    }
-    .topnav a {
-        float:left;
-    }
-    
-  }
-
- 
-
-
-  /* ----------------------newsarea----------- */
-.newsarea{
-    width:100%;
-    /* background-color: rgb(177, 177, 177); */
-    height: 30px;
-    padding: 0.7%;
-
-}
-  
-
-
-/*------------------------------footer-----------------------------------*/
-footer{
-    display: flex;
-    position:relative;
-    bottom: 0%;
-    width: 100%;
+    margin-top: 250px;
+    background: #262626;
+    color: #627482 !important;
+    margin-bottom: 0;
+    padding-bottom: 0
 }
 
 
 
-.footstyle{
+.row{
     justify-content: space-around;
-    width: 100%;
-    margin: auto;
-    line-height: 20px;
-    background-image: linear-gradient(45deg,rgb(251, 255, 0),rgb(12, 112, 143));
 }
 
-.footstyle ul{
-    list-style-type:circle;
+small {
+    font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
 }
 
-.footstyle li:hover{
-    list-style-type: disc;
-    color: black;
-    cursor:pointer;
+.bold-text {
+    color: #989c9e !important
 }
 
-.footlistcol-1{
-    text-align: center;
-    position: relative;
-    width: 30%; 
-    padding: 20px;
-    padding-left: 10%; 
-    float: left;
-    color: rgb(255, 246, 246);
+.mt-55 {
+    margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
 }
 
-.footlistcol-2{
-    width: 30%;
-    padding: 20px;
-    text-align: center;
-    float: left;
-    color: rgb(255, 246, 246);
+h3 {
+    font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
 }
 
-.socialicons{
-    margin: auto;
-    padding-left:10%;
-    width: auto;
-    float: left;
-    color: whitesmoke;
-}
-@media screen and (max-width:600px){
-    .footlistcol-1,.footlistcol-2{
-        width:50%;
-    }
-    .socialicons{
-    text-align: center;
-    margin: auto 33%;
-    width: 40%;
-    padding: 0%;
-    color: whitesmoke;}
-}
-    
-
-.socialicons img{
-    position: relative;
-    width: 1cm;
-    height: 1cm;
-    border-radius: 3mm;
-}
-.socialicons img:hover{
-    transition: .1s;
-    scale: 110%;
-    opacity: 1;
-
+.social {
+    font-size: 21px !important
 }
 
-.footstyle h3{
-
-    margin-left: 10%;
-    color: black;
-}
-.copyright{
-    width: 100%;
-    float:left;
-    background-color:rgba(147, 163, 141, 0.671);
-    text-align: center;
+.rights {
+    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
 }
